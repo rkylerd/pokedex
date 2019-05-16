@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>The Pokédex</title>
+    <link rel="stylesheet" href="./styles.css">
+    
+  </head>
+
+  <body>
+    <section id="top" style="margin-top: .5rem; width: 60%; margin: auto" >
+        <h1 style="padding-top: .5rem; text-align: center">The Pokédex<img style="display: inline-block;" width="90px" height="auto" src="http://vignette1.wikia.nocookie.net/pokemon/images/1/1f/Pokedex_FRLG.png/revision/latest?cb=20100717083156"></img>
+        </h1>
+            
+    </section>
+    <section id="options">
+
+        <form class="submission" >
+            <label style="margin-right: 1rem;">Filter the type of Pokemon</label>
+            <input id="search-box" type="text" style="width: 13vw" placeholder="Enter a name, or Pokemon Type" autofocus>
+            
+            <br><br>
+            <label for="drop-down">Select a Pokémon card deck</label>
+            <select name="drop-down" id="card-set">
+              <option value="0">Emerald Fire</option>
+              <option value="1">Unbroken Bonds</option>
+              <option value="2">Detective Pikachu</option>
+              <option value="3">Team Up</option>
+              <option value="4">Diamond & Pearl</option>
+              <option value="5">Lost Thunder</option>
+            </select>
+            <!-- <input id="toggle-leagues" type="button" value="Toggle Leagues"> -->
+
+         <!-- <input id="filter-button" type="button" value="Submit">
+          <input id="clear" type="button" value="Clear Filter"> -->
+          </form>
+          <div id="optional-filters">
+          <form style="display: flex; flex-wrap: wrap;">
+            <div class="hold-together"><input class="type_checkbox" id="Grass" type="checkbox">Grass</input></div>
+            <div class="hold-together"><input class="type_checkbox" id="Fire" type="checkbox">Fire</input></div>
+            <div class="hold-together"><input class="type_checkbox" id="Water" type="checkbox">Water</input></div>
+            <div class="hold-together"><input class="type_checkbox" id="Poison" type="checkbox">Poison</input></div>
+            <div class="hold-together"><input class="type_checkbox" id="Fairy" type="checkbox">Fairy</input></div>
+            <div class="hold-together"><input class="type_checkbox" id="Dragon" type="checkbox">Dragon</input></div>
+            <div class="hold-together"><input class="type_checkbox" id="Dark" type="checkbox">Dark</input></div>
+            <div class="hold-together"><input class="type_checkbox" id="Ghost" type="checkbox">Ghost</input></div>
+            <div class="hold-together"><input class="type_checkbox" id="Electric" type="checkbox">Electric</input></div>
+            <div class="hold-together"><input class="type_checkbox" id="Ground" type="checkbox">Ground</input></div>
+            <div class="hold-together"><input class="type_checkbox" id="Flying" type="checkbox">Flying</input></div>
+            <div class="hold-together"><input class="type_checkbox" id="Colorless" type="checkbox">Normal</input></div>
+            <div class="hold-together"><input class="type_checkbox" id="Fighting" type="checkbox">Fighting</input></div>
+            <div class="hold-together"><input class="type_checkbox" id="Ice" type="checkbox">Ice</input></div>
+            <div class="hold-together"><input class="type_checkbox" id="Rock" type="checkbox">Rock</input></div>
+            <div class="hold-together"><input class="type_checkbox" id="Psychic" type="checkbox">Psychic</input></div>
+            <div class="hold-together"><input class="type_checkbox" id="Steel" type="checkbox">Steel</input></div>
+            <div class="hold-together"><input class="type_checkbox" id="Bug" type="checkbox">Bug</input></div>
+          </form>
+        </div>
+      
+          
+
+        </section>
+        <div id="imageResults">
+              
+          </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+    <script text="type/javascript" src="./script.js"></script>
+    </script>
+
+  </body>
+</html>
